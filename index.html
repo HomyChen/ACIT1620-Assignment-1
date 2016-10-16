@@ -62,15 +62,17 @@
         .block {
             display: inline-block;
             margin: 0px 20px 0px 20px;
+            position:relative;
+            top:170px;
+            
         }
         
         .title {
-            height: 50px;
-            width: 150px;
+            
             position: relative;
             top: -80px;
-            left: 60px;
-            background-color: azure;
+            
+            
         }
         
         #p1 {
@@ -113,6 +115,16 @@
             color: rgba(255,255,255,0.6);
             font-size: 80px;
         }
+        
+        #backgroundparty {
+            position:absolute;
+            top: -30px;
+            left: 30px;
+        }
+        
+     
+        
+        
             
     </style>
     
@@ -122,40 +134,41 @@
             <h3 id='tagline'>Welcome to my page!</h3>
             <img id='avatar' src='http://placekitten.com/200/200' />
             
+            
             <div id='blank'>
-                
+                <button id='backgroundparty'>MASH THIS BUTTON</button>
                 <div id='img1' class='block'>
-                    <img id='p1' src='http://placekitten.com/201/201' />
+                    
                     <div id='t1' class='title'>
-                        <h2>Meow</h2>
+                        <button id='but1'><h2>Meow</h2></button>
                     </div>
                 </div>
                 
                 <div id='img2' class='block'>
-                    <img id='p1' src='http://placekitten.com/199/199' />
+                    
                     <div id='t2' class='title'>
-                        <h2>Purrr</h2>
+                        <button id='but2'><h2>Purrr</h2></button>
                     </div>
                 </div>
                 
                 <div id='img3' class='block'>
-                    <img id='p1' src='http://placekitten.com/202/202' />
+                    
                     <div id='t3' class='title'>
-                        <h2>I'm a kitten</h2>
+                        <button id='but3'><h2>I'm a kitten</h2></button>
                     </div>
                 </div>
                 
                 <div id='img4' class='block'>
-                    <img id='p1' src='http://placekitten.com/200/199' />
+                    
                     <div id='t4' class='title'>
-                        <h2>Snowy Days</h2>
+                        <button id='but4'><h2>Snowy Days</h2></button>
                     </div>
                 </div>
                 
                 <div id='img5' class='block'>
-                    <img id='p1' src='http://placekitten.com/201/202' />
+                    
                     <div id='t5' class='title'>
-                        <h2>Besties</h2>
+                        <button id='but5'><h2>Besties!</h2></button>
                     </div>
                 </div>
                 
@@ -170,7 +183,8 @@
                         </div>
                     </div>
                     <div id='banner2'>
-                        <h3 id='tagline2'>Now get off my page.</h3>
+                        <h3 id='tagline2'>Now get off my page.<button id='remove'>OK</button></h3>
+                        
                     </div>
                 </div>
                     
@@ -182,7 +196,84 @@
         
         
         
-    
+        <script>
+            var removeBut = document.getElementById("remove");
+            
+            removeBut.onclick = function(){
+                document.body.innerHTML = "";
+            }
+            
+            var mashBut = document.getElementById('backgroundparty');
+            
+            mashBut.onclick = function(){
+                var blank = document.getElementById('blank')
+                r = Math.round(Math.random()*255);                             
+                g = Math.round(Math.random()*255);
+                b = Math.round(Math.random()*255);
+                
+                blank.style.backgroundColor = "rgb("+r+","+g+","+b+")"; 
+            }
+            
+            var but1 = document.getElementById('but1');
+            var but2 = document.getElementById('but2');
+            var but3 = document.getElementById('but3');
+            var but4 = document.getElementById('but4');
+            var but5 = document.getElementById('but5');
+            
+            var img1 = document.getElementById('img1');
+            var img2 = document.getElementById('img2');
+            var img3 = document.getElementById('img3');
+            var img4 = document.getElementById('img4');
+            var img5 = document.getElementById('img5');
+            
+            var block = document.getElementById('block');
+            
+            but1.onclick = function(){
+                img1.innerHTML = "<img id='p1' src='http://placekitten.com/201/201' /> <div id='t1' class='title'><button id='but1'><h2>Meow</h2></button></div>";
+                img1.style.top = "0px";
+                img2.style.top = "0px";
+                img3.style.top = "0px";
+                img4.style.top = "0px";
+                img5.style.top = "0px";
+            }
+            
+            but2.onclick = function(){
+                img2.innerHTML = "<img id='p1' src='http://placekitten.com/199/199' /><div id='t2' class='title'><button id='but2'><h2>Purrr</h2></button></div>"
+                img1.style.top = "0px";
+                img2.style.top = "0px";
+                img3.style.top = "0px";
+                img4.style.top = "0px";
+                img5.style.top = "0px";
+            }
+            
+            but3.onclick = function(){
+                img3.innerHTML = "<img id='p1' src='http://placekitten.com/202/202' /><div id='t3' class='title'><button id='but3'><h2>I'm a kitten</h2></button></div>"
+                img1.style.top = "0px";
+                img2.style.top = "0px";
+                img3.style.top = "0px";
+                img4.style.top = "0px";
+                img5.style.top = "0px";
+            }
+            
+            but4.onclick = function(){
+                img4.innerHTML = "<img id='p1' src='http://placekitten.com/200/199' /><div id='t4' class='title'><button id='but4'><h2>Snowy Days</h2></button></div>"
+                img1.style.top = "0px";
+                img2.style.top = "0px";
+                img3.style.top = "0px";
+                img4.style.top = "0px";
+                img5.style.top = "0px";
+            }
+            
+            but5.onclick = function(){
+                img5.innerHTML ="<img id='p1' src='http://placekitten.com/201/202' /><div id='t5' class='title'><button id='but5'><h2>Besties!</h2></button></div>"
+                img1.style.top = "0px";
+                img2.style.top = "0px";
+                img3.style.top = "0px";
+                img4.style.top = "0px";
+                img5.style.top = "0px";
+            }
+            
+        </script>
     </body>
     
 </html>
