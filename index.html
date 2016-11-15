@@ -2,278 +2,53 @@
 <html>
     <head>
         <title>Assignment 1 by Homy Chen</title>
+        <link href='style.css' type='text/css' rel='stylesheet'/>
+
     </head>
     
-    <style>
-    
-        #body {
-            margin: 0;
-        }    
-    
-        #banner {
-            margin: 0;
-            width: 100vw;
-            height: 500px;
-            background-color: antiquewhite;
-            background-image: url(http://placekitten.com/1000/1200);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            position: absolute;
-            display: inline-block;
-        }
-        
-        #tagline {
-            position:absolute;
-            top:20%;
-            left:30%;
-            color: rgba(255,255,255,0.6);
-            font-size: 50px;
-        }
-        
-        #avatar {
-            position:relative;
-            top: 80%;
-            left: 44%;
-            height: auto;
-            border-radius: 100px;
-        }
-        
-        #blank {
-            margin: 0;
-            width: 100vw;
-            height: 600px;
-            background-color: orange;
-            background-repeat: no-repeat;
-            position: relative;
-            top: 120%;
-            display: inline-block;
-        }
-        
-        #bio {
-            margin: 0;
-            position: relative;
-            top: 97px;
-            width: 100vw;
-            height: 800px;
-            background-color: bisque;
-        }
-        
-        .block {
-            display: inline-block;
-            margin: 0px 20px 0px 20px;
-            position:relative;
-            top:170px;
-            
-        }
-        
-        .title {
-            
-            position: relative;
-            top: -80px;
-            
-            
-        }
-        
-        #p1 {
-            position: relative;
-            top:180px;
-         
-        }
-        
-        #avatar2 {
-            position: relative;
-            top: 70px;
-            left: 50px;
-            display: inline-block;
-        }
-        
-        #biocontent {
-            position: absolute;
-            top: 40px;
-            left: 500px;
-            display: inline-block;
-        }
-        
-        #banner2 {
-            margin: 0;
-            width: 100vw;
-            height: 500px;
-            background-color: antiquewhite;
-            background-image: url(http://placekitten.com/1000/500);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            position: absolute;
-            top: 550px;
-        }
-        
-        #tagline2 {
-            position:absolute;
-            top:100px;
-            left:600px;
-            color: rgba(255,255,255,0.6);
-            font-size: 80px;
-        }
-        
-        #backgroundparty {
-            position:absolute;
-            top: -30px;
-            left: 30px;
-        }
-        
-     
-        
-        
-            
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <script src='myjs.js'></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src='myjs.js'></script>
     
     <body>
-        
-        <div id='banner'>
-            <h3 id='tagline'>Welcome to my page!</h3>
+        <div id='background'>
             <img id='avatar' src='http://placekitten.com/200/200' />
-            
-            
-            <div id='blank'>
-                <button id='backgroundparty'>MASH THIS BUTTON</button>
-                <div id='img1' class='block'>
-                    
-                    <div id='t1' class='title'>
-                        <button id='but1'><h2>Meow</h2></button>
-                    </div>
-                </div>
-                
-                <div id='img2' class='block'>
-                    
-                    <div id='t2' class='title'>
-                        <button id='but2'><h2>Purrr</h2></button>
-                    </div>
-                </div>
-                
-                <div id='img3' class='block'>
-                    
-                    <div id='t3' class='title'>
-                        <button id='but3'><h2>I'm a kitten</h2></button>
-                    </div>
-                </div>
-                
-                <div id='img4' class='block'>
-                    
-                    <div id='t4' class='title'>
-                        <button id='but4'><h2>Snowy Days</h2></button>
-                    </div>
-                </div>
-                
-                <div id='img5' class='block'>
-                    
-                    <div id='t5' class='title'>
-                        <button id='but5'><h2>Besties!</h2></button>
-                    </div>
-                </div>
-                
-                <div id='bio'>
-                    <img id='avatar2' src='http://placekitten.com/400/402' />
-                    <div id='biocontent'>
-                        <div id='biotitle'>
-                            <h1>About Me</h1>
-                        </div>
-                        <div id='biography'>
-                            <h3>I'm Homy Chen and I'm a student taking ACIT1620, which is the fundamentals of web technologies. I'm not actually a cat. This is just an assignment to practice using html to create a webpage based on a simple drawn template made by the instructor. I hope the stock photos of cats don't matter, as long as I have shown that I know the basic principles behind positioning items in a webpage. I also hope the images don't randomize every time someone opens the file, otherwise the titles of the five images above might not make sense.</h3>
-                        </div>
-                    </div>
-                    <div id='banner2'>
-                        <h3 id='tagline2'>Now get off my page.<button id='remove'>OK</button></h3>
-                        
-                    </div>
-                </div>
-                    
-                    
-                
-            </div>
-            
+            <h1 id='name'>Homy Chen</h1>
         </div>
         
+        <div id='icon_space'>
+            <img id='icon1' class='icon'
+                 src='http://placekitten.com/198/199'/>
+            <img id='icon2' class='icon'
+                 src='http://placekitten.com/199/199'/>
+            <img id='icon3' class='icon'
+                 src='http://placekitten.com/200/200'/>
+            <img id='icon4' class='icon'
+                 src='http://placekitten.com/201/200'/>
+            <img id='icon5' class='icon'
+                 src='http://placekitten.com/199/198'/>
+            <img id='icon6' class='icon'
+                 src='http://placekitten.com/198/200'/>
+        </div>
         
+        <div id='bio_space'>
+            <div id='avatar2'></div> 
+            <div id='bio_text'>
+                <h1 id='homy'>Homy Chen</h1>
+                <h3 id='homy_text'> Click pictures to change the avatar. 
+                    <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rhoncus libero vitae metus hendrerit tristique a ut tellus. Nullam et est vitae mi fringilla pretium nec ut nisl. Suspendisse sit amet orci eu enim ornare ullamcorper ac eu massa. Etiam risus arcu, posuere sit amet velit quis, dictum convallis odio. Donec iaculis at nisl mattis fringilla. Sed scelerisque pretium massa, et iaculis sem finibus id. Maecenas vehicula feugiat libero, eu vestibulum risus luctus eu. Aliquam tellus lectus, semper ut est id, tristique vulputate urna.</h3>
+            </div>
+        </div>
         
-        <script>
-            var removeBut = document.getElementById("remove");
+        <div id='end_background'>
+            <h3 id='tagline2'>Now get off my page.</h3>
+        </div>
             
-            removeBut.onclick = function(){
-                document.body.innerHTML = "";
-            }
-            
-            var mashBut = document.getElementById('backgroundparty');
-            
-            mashBut.onclick = function(){
-                var blank = document.getElementById('blank')
-                r = Math.round(Math.random()*255);                             
-                g = Math.round(Math.random()*255);
-                b = Math.round(Math.random()*255);
-                
-                blank.style.backgroundColor = "rgb("+r+","+g+","+b+")"; 
-            }
-            
-            var but1 = document.getElementById('but1');
-            var but2 = document.getElementById('but2');
-            var but3 = document.getElementById('but3');
-            var but4 = document.getElementById('but4');
-            var but5 = document.getElementById('but5');
-            
-            var img1 = document.getElementById('img1');
-            var img2 = document.getElementById('img2');
-            var img3 = document.getElementById('img3');
-            var img4 = document.getElementById('img4');
-            var img5 = document.getElementById('img5');
-            
-            var block = document.getElementById('block');
-            
-            but1.onclick = function(){
-                img1.innerHTML = "<img id='p1' src='http://placekitten.com/201/201' /> <div id='t1' class='title'><button id='but1'><h2>Meow</h2></button></div>";
-                img1.style.top = "0px";
-                img2.style.top = "0px";
-                img3.style.top = "0px";
-                img4.style.top = "0px";
-                img5.style.top = "0px";
-            }
-            
-            but2.onclick = function(){
-                img2.innerHTML = "<img id='p1' src='http://placekitten.com/199/199' /><div id='t2' class='title'><button id='but2'><h2>Purrr</h2></button></div>"
-                img1.style.top = "0px";
-                img2.style.top = "0px";
-                img3.style.top = "0px";
-                img4.style.top = "0px";
-                img5.style.top = "0px";
-            }
-            
-            but3.onclick = function(){
-                img3.innerHTML = "<img id='p1' src='http://placekitten.com/202/202' /><div id='t3' class='title'><button id='but3'><h2>I'm a kitten</h2></button></div>"
-                img1.style.top = "0px";
-                img2.style.top = "0px";
-                img3.style.top = "0px";
-                img4.style.top = "0px";
-                img5.style.top = "0px";
-            }
-            
-            but4.onclick = function(){
-                img4.innerHTML = "<img id='p1' src='http://placekitten.com/200/199' /><div id='t4' class='title'><button id='but4'><h2>Snowy Days</h2></button></div>"
-                img1.style.top = "0px";
-                img2.style.top = "0px";
-                img3.style.top = "0px";
-                img4.style.top = "0px";
-                img5.style.top = "0px";
-            }
-            
-            but5.onclick = function(){
-                img5.innerHTML ="<img id='p1' src='http://placekitten.com/201/202' /><div id='t5' class='title'><button id='but5'><h2>Besties!</h2></button></div>"
-                img1.style.top = "0px";
-                img2.style.top = "0px";
-                img3.style.top = "0px";
-                img4.style.top = "0px";
-                img5.style.top = "0px";
-            }
-            
-        </script>
+        
     </body>
     
 </html>

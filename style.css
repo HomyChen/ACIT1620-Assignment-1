@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+}
+
+
+#background {
+    position: absolute;
+    width: 100vw;
+    height: 75vh;
+    background-image: url(http://placekitten.com/1000/1200);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    display: inline-block;
+}
+
+#avatar {
+    position:absolute;
+    top: 80%;
+    left: 44%;
+    height: auto;
+    border-radius: 100px;
+}
+
+#name {
+    position:absolute;
+    top: 120%;
+    left: 45%;
+}
+
+#icon_space {
+    position: absolute;
+    display: inline-block;
+    width: 100vw;
+    height: 33vh;
+    background-color: bisque;
+    top: 100vh;
+}
+
+#bio_space {
+    position: absolute;
+    display: inline-block;
+    width: 100vw;
+    height: 75vh;
+    background-color: antiquewhite;
+    top: 133vh;
+}
+
+#end_background {
+    margin: 0;
+    width: 100vw;
+    height: 75vh;
+    background-color: antiquewhite;
+    background-image: url(http://placekitten.com/1000/500);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 208vh;
+}
+
+#avatar2 {
+    margin: 0;
+    position: absolute;
+    width: 65vh;
+    height: 65vh;
+    top: 5vh;
+    left: 5vw;
+    background-color: aliceblue;
+    background-image: url(http://placekitten.com/400/402);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#homy {
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+}
+
+#homy_text {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+}
+
+#tagline2 {
+    position:absolute;
+    top:40vh;
+    left:30vw;
+    color: rgba(255,255,255,0.6);
+    font-size: 80px;    
+}
+
+@media only screen and (max-width:1200px){
+    #icon_space {
+        height: 66vh;
+    }
+    #bio_space {
+        top:166vh;
+    }
+    #end_background {
+        top: 241vh;
+    }
+}
+
+@media only screen and (max-width:606px){
+    .icon {
+        width: 49vw;
+        height: auto;
+    }
+    
+    #icon_space {
+        height: 137vh;
+    }
+    #bio_space {
+        height: 100vh;
+        top:237vh;
+    }
+    #end_background {
+        top: 337vh;
+    }
+}
+
+
+
+
+
